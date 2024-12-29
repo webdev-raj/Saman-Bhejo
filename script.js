@@ -57,14 +57,3 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "/contact"; // Replace with your actual contact page URL
     });
 });
-
-// Initialize Lenis
-const lenis = new Lenis();
-
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
