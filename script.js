@@ -2,17 +2,6 @@ document.getElementById('mobile-menu-btn').addEventListener('click', function ()
     document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
-// Initialize Lenis
-const lenis = new Lenis();
-
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
-
 document.addEventListener("DOMContentLoaded", function () {
     // Get elements from the DOM
     const truckRadios = document.querySelectorAll('input[name="truck"]');
@@ -68,3 +57,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "/contact"; // Replace with your actual contact page URL
     });
 });
+
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
